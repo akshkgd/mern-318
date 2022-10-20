@@ -1,0 +1,46 @@
+
+.title{
+    color:blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+
+/* css box model
+border => thickness, style {solid, dotted, dashed, groove}, color
+padding => space inside the border
+margin => space outside the border
+*/
+
+.card{
+    border: 1px solid lightgray;
+    /* background-color: #ffeae3; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 16px;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    
+}
+.user{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.btn{
+    background-color: black;
+    border:none;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+.input{
+    border: 1px solid lightgray;
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+}
