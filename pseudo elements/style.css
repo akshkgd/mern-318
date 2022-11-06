@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+.title{
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+}
+.bv{
+    color: blueviolet;
+}
+/* pseudo elements => :: */
+/* .title::first-letter{
+    color: blueviolet;
+} */
+/* .title::first-line{
+    color: blueviolet;
+} */
+::selection{
+    background-color: blueviolet;
+    color: white;
+}
+/* .title::before{
+    content: 'Value';
+} */
+.card{
+    background-color: rgb(38, 82, 82);
+    height: 140px;
+    width: 280px;
+    border-radius: 10px;
+    margin:50px auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card::before{
+    content: '---';
+}
+
+/* pseudo classes : */
+/* ul li:first-child{
+    color: red;
+} */
+
+/* ul li:last-child{
+    color: red;
+} */
+
+ul li:nth-child(4){
+    color: red;
+}
+ul li:nth-child(1){
+    color: red;
+}
+ul li:nth-child(even){
+    background-color: rgb(255, 243, 206);
+    padding: 10px;
+}
+ul li:nth-child(odd){
+    padding: 10px;
+}
+a:visited{
+    color:green
+}
+a:focus{
+    color:blueviolet
+}
+a:hover{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.login-card{
+    border:1px solid lightgray;
+    border-radius: 16px;
+    width: 400px;
+    margin:50px auto;
+    padding:20px;
+
+}
+input{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+input:focus{
+    border:2px solid blueviolet;
+    outline: none;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 14px 32px;
+    border:none;
+    border-radius: 10px;
+
+}
