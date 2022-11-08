@@ -1,0 +1,131 @@
+/* media query => responsiveness */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    width: 670px;
+    padding: 10px;
+    margin: 50px auto;
+} */
+
+.card-title{
+    font-size: 24px;
+}
+.card-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 16px;
+}
+@media(min-width: 586px){
+    .card{
+        border: 1px solid lightgray;
+        border-radius: 16px;
+        width: 670px;
+        padding: 10px;
+        margin: 50px auto;
+    }
+    .card-img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .food-card{
+        width: 340px;
+        margin: 10px;
+        border-radius: 16px;
+        border: 1px solid lightgray;
+        padding: 10px;
+    }
+    .food-img{
+        width: 100%;
+        border-radius: 16px;
+        
+    }
+    .dummy{
+        border: 1px solid lightgray;
+        border-radius: 16px;
+        width: 670px;
+        padding: 10px;
+        margin: 50px auto;
+    }
+    .dummy-img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+}
+
+@media(max-width: 586px){
+    .card{
+        margin: 50px 10px;
+    }
+    .card-img{
+        width: 100%;
+        border-radius: 16px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .food-card{
+        
+        margin: 10px;
+        border-radius: 16px;
+        background-color: rgb(242, 242, 242);
+        padding: 10px;
+    }
+    .food-img{
+        width: 100%;
+        border-radius: 16px;
+    
+    }
+    .dummy{
+        
+        border-radius: 16px;
+        
+        
+        margin: 50px auto;
+    }
+    .dummy-img{
+        display: none;
+    }
+}
+
+
+/* breakpoints
+sm -> small => 586px
+md -> medium => 786px
+lg -> large => 992px
+xlg -> extra large => 1200px
+*/
+
+/* .container{
+    display: flex;
+    justify-content: center;
+
+}
+.food-card{
+    width: 340px;
+    margin: 10px;
+    border-radius: 16px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+.food-img{
+    width: 100%;
+    border-radius: 16px;
+
+} */
