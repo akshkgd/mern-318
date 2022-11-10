@@ -1,0 +1,107 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.title{
+    font-size: 60px;
+}
+.container{
+    display: flex;
+    /* justify-content: center; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    /* transition: 1s; */
+    animation-name: virat;
+    animation-duration: 2s;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes virat{
+    20%{
+        background-color: tomato;
+        margin-top: 200px;
+    }
+    40%{
+        background-color: orangered;
+        margin-left: 400px; 
+    }
+    60%{
+        background-color: deeppink;
+        margin-right: 300px;
+    }
+    80%{
+        background-color: dodgerblue;
+        margin-bottom: 300px;
+    }
+    100%{
+        margin-left: 600px;
+        transform: rotate(360deg);
+        background-color: tomato;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+/* .box:hover{
+    border-radius: 50%;
+} */
+.card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding: 10px;
+    width: 360px;
+    transition: 300ms;
+}
+.card:hover{
+    width: 430px;
+    transform: rotate(-4deg);
+    border:1px solid white;
+    box-shadow: 0 6px 8px #eee;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.cookie{
+    width: 440px;
+    border:1px solid lightgray;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 40px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.content{
+    padding: 0 10px 0 10px;
+}
+.btn{
+    background-color: rgb(0, 128, 255);
+    padding: 14px 24px;
+    color: white;
+    border:none;
+    border-radius: 8px;
+}
+.cookie-img{
+    width: 140px;
+    height: 140px;
+    animation-name: dancing-cookie;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes dancing-cookie{
+    100%{
+        transform: rotate(8deg);
+    }
+}
