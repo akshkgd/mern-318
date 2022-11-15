@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.exp-container{
+    display: flex;
+    justify-content: center;
+    margin: 40px 6%;
+}
+.exp-card{
+    width: 50%;
+    margin:0 20px;
+    border-radius: 16px;
+    position: relative;
+    flex-grow: 1;
+}
+.exp-card:first-child{
+    margin-left: 0;
+}
+.exp-card:last-child{
+    margin-right: 0;
+}
+
+.exp-card-img{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.exp-card-content{
+    position: absolute;
+    margin: 30px;
+    top:0;
+    color: white;
+}
+.exp-card-content h3{
+    font-size: 22px;
+}
+.exp-card-content p,h3{
+    margin:0;
+}
+.exp-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    background-color: #fff;
+    color: rgb(34, 34, 34);
+    padding:8px 14px;
+    border:none;
+    border-radius: 8px;
+}
+
+.suggestions-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 6%;
+}
+.suggestions-card{
+    width: 360px;
+    border:1px solid lightgray;
+    padding: 10px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.suggestions-card:first-child{
+    margin-left: 0;
+}
+.suggestions-card:last-child{
+    margin-right: 0;
+}
+.suggestions-card-content{
+    padding: 0 0 0 14px;
+}
+.suggestions-card-img{
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+
+}
+.suggestions-card-content h3{
+    font-size: 17px;
+    font-weight: 400;
+}
+.suggestions-card-content p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.btn-outline{
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
