@@ -29,6 +29,7 @@ body{
 .nav-btn{
     text-decoration: none;
     background-color: black;
+    border:1px solid black;
     color: white;
     padding: 14px 28px;
     border-radius: 10px;
@@ -47,14 +48,82 @@ body{
 
 
 .title{
-    font-size: 46px;
+    font-size: 40px;
     margin-bottom: 6px;
 }
 
 .user{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
+}
+.card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+}  
+.service-icon{
+    height: 40px;
+} 
+.service-heading{
+    margin-left: 20px;
+}
+.feedback-card{
+    border-radius: 16px;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.feedback-container{
+    display: flex;
+}
+.feedback-card p{
+    font-size: 17px;
+}
+.feedback-card h2{
+    margin-bottom: 0;
+}
+.feedback-user{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+.feedback-user-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.fc1{
+    background-color: rgba(63, 125, 201, 0.209);
+}
+.fc2{
+    background-color: rgb(255, 242, 210);
+    margin-left: 10px;
+}
+input{
+    width: 49%;
+    box-sizing: border-box;
+    border:1px solid lightgray;
+    padding: 17px;
+    border-radius: 10px;
+}
+textarea{
+    margin-top: 20px;
+    width: 100%;
+    border:1px solid lightgray;
+    padding: 17px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 1px solid blueviolet;
+}
+.discuss-title{
+    font-size: 28px;
+    margin-bottom: 0;
 }
 /* screen grater than 586px */
 @media(min-width:586px){
@@ -72,6 +141,7 @@ body{
     }
     .hero-container{
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
     section{
@@ -91,9 +161,13 @@ body{
         width: 320px;
         border-radius: 14px;
         padding: 8px;
-        box-shadow: 0 3px 8px #eee;
+        box-shadow: 0 13px 13px #eee;
         margin: 20px;
         transition: 200ms;
+    }
+    .service-d-flex{
+        display: flex;
+        align-items: center;
     }
 }
 /* small less than 586px */
@@ -133,7 +207,7 @@ body{
         width: 320px;
         border-radius: 14px;
         padding: 8px;
-        box-shadow: 0 3px 8px #eee;
+        box-shadow: 6px 16px 3px #eee;
         margin: 20px 0;
         transition: 200ms;
         flex-grow: 1;
@@ -148,4 +222,15 @@ body{
 }
 .blog-card:hover{
     transform: rotate(3deg);
+}
+.submit-btn{
+    text-decoration: none;
+    background-color: blueviolet;
+    border:1px solid blueviolet;
+    color: white;
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 6px;
 }
