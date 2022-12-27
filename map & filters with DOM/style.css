@@ -88,3 +88,18 @@ input:last-child{
         -top: -100px;
     }
 }
+.user{
+    width: 500px;
+
+    background-color: #f4f4f4;
+    pading: 10px;
+    margin: 10px auto;
+    /* box-sizing: border-box; */
+    border-radius: 16px;
+    display: block;
+    display: flex;
+    
+}
+.email{
+    margin-left: 20px;
+}

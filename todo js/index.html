@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-container">
+            <div class="todo-header">
+                <h3 class="title">My Todo's</h3>
+            </div>
+            <div class="todo-body">
+                <div class="todo">
+                    <input type="checkbox" class="todo-done"  id="todo-done">
+                    <div class="content">
+                        <p class="todo-title">This is first task</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="due"> 27th Jan</p>
+                    </div>
+                </div>
+
+                <div class="todo">
+                    <input type="checkbox" class="todo-done"  id="todo-done">
+                    <div class="content">
+                        <p class="todo-title">This is first task</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="due"> 27th Jan</p>
+                    </div>
+                </div>
+
+
+                <div class="todo">
+                    <input type="checkbox" class="todo-done"  id="todo-done">
+                    <div class="content">
+                        <p class="todo-title">This is first task</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="due"> 27th Jan</p>
+                    </div>
+                </div>
+
+
+               
+
+               
+
+
+
+                
+            </div>
+
+        </div>
+        <div class="add-todo-container">
+            <input type="text" placeholder="Task name here" class="title-input" id="title">
+            <input type="text" placeholder="Description" class="desc-input" id="desc">
+            <div class="add-flex">
+                <input type="text" placeholder="Due Date" class="date-input" id="dueDate" onfocus="(this.type='date')"
+                onblur="(this.type='text')" >
+                <button class="btn" onclick="addTodo()">Add Task</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

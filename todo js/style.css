@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+body{
+    margin: 0;
+    background-color: rgb(251, 246, 255);
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    width: 600px;
+    margin: 60px auto;
+}
+.todo-container{
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: -6px 0px 9px -3px rgba(0,0,0,0.1);
+}
+.add-todo-container{
+    margin: 10px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: -6px 0px 9px -3px rgba(0,0,0,0.1);
+    position: sticky;
+    bottom: 0;
+}
+.todo-header{
+    padding: 12px 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.title{
+    margin: 0;
+    font-weight: normal;
+}
+.todo{
+    padding: 12px 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    display: flex;
+    align-items: baseline;
+}
+.todo-title{
+    margin: 0;
+    font-size: 15px;
+}
+.desc{
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.due{
+    margin: 6px 0 0 0;
+    font-size: 13px;
+    color: rgb(149, 7, 7);
+}
+.content{
+    margin-left: 20px;
+}
+.todo-done{
+    margin: 0;
+}
+.add-todo-container{
+    border-radius: 12px;
+    padding: 20px;
+}
+.title-input, .desc-input{
+    width: 100%;
+    padding: 12px 0;
+    box-sizing: border-box;
+    border: none;
+}
+.title-input{
+    font-size: 16px;
+}
+.desc-input{
+    color: gray;
+}
+.date-input{
+    border: 1px solid lightgray;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+}
+.add-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.title-input:focus, .desc-input:focus{
+    outline: none;
+    border:none;
+}

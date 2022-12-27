@@ -1,5 +1,6 @@
 let users = [];
 let alertDiv = document.getElementById('alert');
+let userContainer = document.getElementById('users');
 function register(){
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
@@ -17,6 +18,7 @@ function register(){
     if(countEmail.length == 0){
         users.push(tempUser);
         // alert
+        alertDiv.innerHTML = 'Registration Successful!'
         alertDiv.classList.remove('d-none');
         // alertDiv.classList.add('alert');
         alertDiv.classList.add('success');
@@ -44,7 +46,18 @@ function register(){
             alertDiv.classList.add('hide-alert');
         }, 2000)
     }
-    
-    console.log(users)
+    userContainer.innerHTML = ''
+    users.map((user)=>{
+       let userDiv = document.createElement('div');
+       let nameContainer = document.createElement('p');
+       let emailContainer = document.createElement('p');
+       emailContainer.classList.add('email')
+       userDiv.classList.add('user');
+       nameContainer.innerText = user.name;
+       emailContainer.innerText = user.email
+       userContainer.appendChild(userDiv);
+       userDiv.appendChild(nameContainer);
+       userDiv.appendChild(emailContainer)
+    })
 
 }
