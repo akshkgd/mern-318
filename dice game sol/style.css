@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 520px;
+    margin: 60px auto;
+    text-align: center;
+}
+.title{
+    font-size: 48px;
+    margin-bottom: 0;
+}
+#dice{
+    height: 140px;
+    width: 140px;
+    background-color: orangered;
+    border-radius: 16px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin-top: 10px;
+    padding: 18px 38px;
+    background-color: black;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+
+}
+#test{
+    margin-top: 10px;
+    padding: 18px 38px;
+    background-color: black;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+
+}
+.animate-dice{
+    animation-name: dice;
+    animation-duration: 4s;
+
+}
+@keyframes dice{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#number{
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+    
+}
