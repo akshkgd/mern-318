@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.maincontainer {
+    height: 560px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg.jpg);
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+
+
+}
+
+.content {
+
+    width: 90%;
+    color: #fff;
+    margin-top: 8%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+
+
+}
+
+.main_heading {
+    color: white;
+    font-size: 48px;
+    line-height: 1;
+    overflow-y: hidden;
+    padding: 20px 0;
+}
+
+
+.main_para {
+    color: white;
+    font-size: 28px;
+    line-height: 1;
+    overflow-y: hidden;
+
+
+}
+
+.sub_heading {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 25px 0 25px 0;
+}
+
+.container_search {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.form {
+    height: 80px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+
+}
+
+.form input {
+    width: 70%;
+    height: 60px;
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.form .btn {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 60px;
+    font-size: 25px;
+    padding-left: 30px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+@media(max-width:700px){
+    .form .btn {
+        font-size: 16px;
+    } 
+}
+.movieContainer{
+    height: 560px;
+    width: 100%;
+    background: rgb(126,126,126);
+    background: linear-gradient(260deg, rgb(70, 70, 70) 0%, rgba(0,0,0,1) 77%);
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+}
+.container{
+    width: 700px;
+
+    display: flex;
+    align-items: center;
+}
+.movie-content{
+    text-align: left;
+    color: white;
+}
+.movie-title{
+    font-size: 44px;
+}
+.small{
+    font-size: 14px;
+    color: rgb(219, 219, 219);
+    margin: 14px 0
+}
+.ratings{
+    background-color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    color: black;
+    margin-top: 14px;
+}
+.movie-img{
+    width: 480px;
+    border-radius: 12px;
+}
+.awards{
+    margin-top: 20px;
+    display: flex;
+
+}
+.award-text{
+    margin-left: 8px;
+}
