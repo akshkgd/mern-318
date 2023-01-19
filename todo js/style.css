@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 body{
     margin: 0;
-    background-color: rgb(251, 246, 255);
+    background-color: rgb(255, 248, 235);
     font-family: 'Inter', sans-serif;
 }
 
@@ -96,4 +96,27 @@ body{
 .title-input:focus, .desc-input:focus{
     outline: none;
     border:none;
+}
+.no-todo{
+    padding: 20px;
+    text-align: center;
+}
+.no-todo p{
+    width: 200px;
+    font-size: 14px;
+    margin: 0 auto;
+    color: rgb(99, 99, 99);
+}
+.no-todo img{
+    height: 200px;
+}
+.no-todo h3{
+    margin: 0 0 8px 0;
+}
+.d-none{
+    display: none;
+}
+.todo-done:checked+.content{
+    background-color:rgb(255, 220, 164);
+
 }

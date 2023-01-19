@@ -12,44 +12,22 @@
         <div class="todo-container">
             <div class="todo-header">
                 <h3 class="title">My Todo's</h3>
+                <div class="no-todo" id="no-todo">
+                    <img src="./img/no task.jpeg" alt="">
+                    <h3>You have no task today </h3>
+                    <p>You have no new tasks today. Start adding your new tasks!</p>
+                </div>
             </div>
-            <div class="todo-body">
-                <div class="todo">
-                    <input type="checkbox" class="todo-done"  id="todo-done">
-                    <div class="content">
-                        <p class="todo-title">This is first task</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="due"> 27th Jan</p>
-                    </div>
-                </div>
-
-                <div class="todo">
-                    <input type="checkbox" class="todo-done"  id="todo-done">
-                    <div class="content">
-                        <p class="todo-title">This is first task</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="due"> 27th Jan</p>
-                    </div>
-                </div>
-
-
-                <div class="todo">
-                    <input type="checkbox" class="todo-done"  id="todo-done">
-                    <div class="content">
-                        <p class="todo-title">This is first task</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="due"> 27th Jan</p>
-                    </div>
-                </div>
-
-
-               
-
-               
-
-
-
+            <div class="todo-body" id="todoContainer">
                 
+                <!-- <div class="todo">
+                    <input type="checkbox" class="todo-done">
+                    <div class="content">
+                        <p class="todo-title">This is first task</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="due"> 27th Jan</p>
+                    </div>
+                </div> -->
             </div>
 
         </div>
@@ -57,7 +35,7 @@
             <input type="text" placeholder="Task name here" class="title-input" id="title">
             <input type="text" placeholder="Description" class="desc-input" id="desc">
             <div class="add-flex">
-                <input type="text" placeholder="Due Date" class="date-input" id="dueDate" onfocus="(this.type='date')"
+                <input type="text" placeholder="Due Date" class="date-input" id="dueDate" onfocus="(this.type='datetime-local')"
                 onblur="(this.type='text')" >
                 <button class="btn" onclick="addTodo()">Add Task</button>
             </div>
