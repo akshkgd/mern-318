@@ -57,9 +57,9 @@
 .card{
   width: 300px;
   margin: 10px;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   padding: 10px;
-
+  box-shadow: 7px 7px 17px 4px rgba(0,0,0,0.1);
   border-radius: 16px;
 }
 .card-img{
@@ -70,4 +70,38 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.tag{
+  background-color: rgb(0, 139, 19);
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.popular{
+  background-color: rgb(249, 95, 0);
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header{
+  position: relative;
+}
+.ratings{
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 4px 12px;
+  margin: 12px;
+  border-radius: 20px;
 }
