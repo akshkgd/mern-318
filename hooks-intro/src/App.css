@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 .App {
   text-align: center;
 }
@@ -73,4 +74,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* spa */
+nav{
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links a{
+  margin-left: 12px;
+  color: black;
+  text-decoration: none;
+
+}
+.links a:hover{
+  color: tomato;
+}
+.hero-container{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+
+}
+.hero-container img{
+  width: 500px;
+}
+.title{
+  font-size: 46px;
+  font-weight: 800;
+}
+.btn{
+  background-color: #e44232;
+  color: white;
+  padding: 22px 66px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
