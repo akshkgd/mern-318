@@ -38,15 +38,6 @@
   }
 }
 
-.btn{
-  background-color: black;
-  padding: 12px 24px;
-  font-size: 15px;
-  color: white;
-  border:none;
-  border-radius: 12px;
-  cursor: pointer;
-}
 .card{
   margin: 50px auto;
   border:  1px solid lightgray;
@@ -106,13 +97,4 @@ nav{
 .title{
   font-size: 46px;
   font-weight: 800;
-}
-.btn{
-  background-color: #e44232;
-  color: white;
-  padding: 22px 66px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
 }
