@@ -1,0 +1,31 @@
+<%- include('nav') %>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-md-5 mt-5">
+                <div class="car">
+                    <div class="card-body">
+                        <h3>Update the details of <%= user.firstName %></h3>
+                        <p class="small">We never share your details 😎 Enter confidiently!</p>
+                        <form action="/update-user" method="post">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="firstName" value="<%= user.firstName %>" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">First Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" required class="form-control" value="<%= user.email %>" name="email" id="floatingInput" placeholder="email address">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <input type="hidden" required class="form-control" value="<%= user.email %>" name="oldEmail" id="floatingInput" placeholder="email address">
+
+                            
+                            <button type="submit" class="btn btn-primary px-4 py-2">Update now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

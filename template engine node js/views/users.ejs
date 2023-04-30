@@ -1,0 +1,24 @@
+<%- include('nav') %>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-md-7">
+                        <h3>All Registered Users</h3>
+                        <p class="small">We never share your details 😎 Enter confidiently!</p>
+                       
+                        <% for(let i=0; i< data.length; i++){ %>
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex " style="gap:20px">
+                                            <p class="m-0"><%= data[i].name %></p> <p class="m-0"><%= data[i].email %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <%}%>
+                    </div>
+                </div>
+            </div>
+        
+</body>
+
+</html>
