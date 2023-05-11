@@ -9,17 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-primary text-center py-3 text-white">Manage your task easily with todo 🚘</div>
+    
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
+    <div class="container mt-1">
+        <div class="d-flex justify-content-between">
+            <a href="/todos" class="fw-bold btn fs-4" style="">Todoist</a>
+            <form action="/logout" method="post">
+                <button type="submit" class="btn text-danger">Logout</button>
+            </form>
+        </div>
+        <div class="row justify-content-center mt-5">
             <div class="col-md-5 text-centr">
                 <%if(task.length  == 0){%>
                 <h1 class="display-2 m-0">👋</h1>
-                <h3 class="fw-bold mt-3">Manage your task @ <span class="text-muted">Ashish</span></h3>
+                <h3 class="fw-bold mt-3">Manage your task @ <span class="text-muted"><%= name %></span></h3>
                 <p>Start adding your todos and be more productive!</p>
                 <%} else{%>
-                    <h3 class="fw-bold my-3">Your Upcoming task @ <span class="text-muted">Ashish</span></h3>
+                    <h3 class="fw-bold my-3">Your Upcoming task @ <span class="text-muted"><%= name %></span></h3>
                         <%for(let i=0; i< task.length; i++){%>
                             <div class="flex my-2 task">
                                 <input type="checkbox" class="task-done" name="" id="">
