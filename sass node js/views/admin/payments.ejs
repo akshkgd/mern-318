@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+  <%- include('nav') %>
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h2 class="fw-bold">Payments</h2>
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Order ID</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Method</th>
+                            <th scope="col">Paid On</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <%for(let i=0; i< payments.length; i++){ %>
+                          <tr>
+                            <th scope="row"><%=i+1%></th>
+                            <td><%= payments[i].order_id %></td>
+        
+                            <td><%= payments[i].email %></td>
+                            <td><%= payments[i].phone %></td>
+                            <td><%= payments[i].desc %></td>
+                            <td><%= payments[i].method %></td>
+                            <td><%= payments[i].date %></td>
+                          </tr>
+                          <%}%>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

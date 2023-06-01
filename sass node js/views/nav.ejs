@@ -10,20 +10,15 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="/products">Products</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          
-        </li>
+       
         
       </ul>
-      <form class="d-flex" role="search">
+      <div class="d-flex" role="search">
         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
         <button class="btn btn-dark px-5 py-2 rounded-pill " data-bs-toggle="modal" data-bs-target="#exampleModal">Try our service</button>
-      </form>
+      </div>
     </div>
   </div>
 </nav>
@@ -40,20 +35,22 @@
           </div>
           </div>
         <div class="modal-body pt-0">
+          <form method="post" action="/request-callback">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="text" name="name" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Full Name</label>
               </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="text" name="phone" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Phone Number</label>
               </div>
               <button class="btn btn-primary mt-3 w-100 py-3 ">Request Callback</button>
-        </div>
+            </form>
+            </div>
         
       </div>
     </div>

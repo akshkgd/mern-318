@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <%- include('nav') %>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-2 data-card bg-1 py-3">
+                    <h1 class="">Users</h1>
+                    <p class=""><%= users.length %></p>
+                </div>
+                <div class="col-2 data-card bg-2 py-3">
+                    <h1 class="">Total Callbacks</h1>
+                    <p class=""><%= callbacks.length %></p>
+                </div>
+                <div class="col-2 data-card bg-3 py-3">
+                    <h1 class="">Paid Callbacks</h1>
+                    <p class=""><%= paid.length %></p>
+                </div>
+                <div class="col-2 data-card bg-4 py-3">
+                    <h1 class="">Follow Ups</h1>
+                    <p class=""><%=followUps.length %></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

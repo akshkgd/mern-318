@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        .razorpay-payment-button{
+            background-color: rgb(0, 128, 255);
+            border: none;
+            padding: 16px 36px;
+            border-radius: 12px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <%- include('nav') %>
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <div class="shadow rounded" >
+                    <div class="p-3">
+                    <h3>Facebook Ads</h3>
+                    <form action="/payment-success" method="post" class="pay-btn">
+  
+                        <script src="https://checkout.razorpay.com/v1/checkout.js"
+                            data-key='rzp_test_1L3v9gzg9nkoYo' 
+                            data-amount="<%=order.amount%>"
+                            data-order_id="<%=order.id%>"
+                            data-buttontext="Pay ₹ <%=order.amount%> Now" data-name="Codekaro" 
+                            data-description="<%=product.title%>"
+                            data-image=""
+                            data-prefill.name="<%=user.name%>"
+                            data-prefill.email="<%=user.email%>"
+                            data-theme.color="#000">
+                        </script>
+                        <input type="hidden" custom="Hidden Element" name="b" value=""">
+                    </form>  
+
+                    
+   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+  
+</html>

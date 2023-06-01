@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <%- include('nav') %>
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <%for(let i=0; i < products.length; i++){ %>
+            <div class="col-md-6">
+                <div class="shadow rounded" >
+                    <div class="p-3">
+                        <img src="https://source.unsplash.com/1600x900/?<%= products[i].img%>" class="img-fluid" alt="">
+                        <div class="d-flex justify-content-between  mt-4"  style="align-content: center;">
+                            <h3 class="m-0"><%= products[i].title%></h3>
+                            <a href="/checkout?product=<%= products[i].title%>" class="btn  btn-dark px-4 rounded-pill">Pay Now</a>
+                        </div>
+                        <p class="small mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sapiente ullam impedit consectetur suscipit veritatis nam repellat id at natus ea mollitia, eligendi sequi, quo, perspiciatis amet distinctio. Sequi ipsa optio impedit quis neque, error perferendis repudiandae aperiam quia quam maiores nobis adipisci harum vero, odio deleniti blanditiis architecto nemo dicta minima aspernatur temporibus. Ducimus distinctio perspiciatis tempore aut sed doloremque unde eligendi velit, odio, delectus, eveniet dolor? Officiis numquam quisquam vero odit! Laudantium officia, sequi in explicabo rem fuga?</p>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+</body>
+</html>

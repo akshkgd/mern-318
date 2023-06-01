@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+  <%- include('nav') %>
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="fw-bold">Callback Request</h2>
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <%for(let i=0; i< callbacks.length; i++){ %>
+                          <tr>
+                            <th scope="row"><%=i+1%></th>
+                            <td><%= callbacks[i].name %>
+                                <%if(callbacks[i].status == 0) {%>
+                                    <p class="tag new ">New Lead</p>
+                                    <% } else if(callbacks[i].status == 1){%>
+                                      <p class="tag follow ">Follow Up</p>
+                                      <%} else if(callbacks[i].status == 2){%>
+                                        <p class="tag paid ">Paid</p>
+                                    <%} else{%>
+                                        <p class="tag resolved">Not Interested</p>
+                                        <%}%>
+                            </td>
+        
+                            <td><%= callbacks[i].email %></td>
+                            <td><%= callbacks[i].phone %></td>
+                            <td>
+                              <form action="/update-callback" method="post">
+                                <input type="hidden" name="id" value="<%= callbacks[i]._id %>">
+                                <button class="form-btn">Update</button>
+                              </form>
+                            </td>
+                          </tr>
+                          <%}%>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

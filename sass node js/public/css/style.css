@@ -1,0 +1,65 @@
+.tag{
+    display: inline-block;
+    padding: 2px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.paid{
+    /* border: 1px solid green; */
+    background-color: rgb(231, 255, 231);
+    color: green;
+}
+.new{
+    /* border: 1px solid green; */
+    background-color: rgb(238, 231, 255);
+    color: rgb(62, 0, 128);
+}
+.follow{
+    /* border: 1px solid green; */
+    background-color: rgb(255, 249, 231);
+    color: rgb(194, 100, 0);
+}
+.resolved{
+    background-color: rgb(255, 231, 231);
+    color: rgb(189, 0, 0);
+}
+.form-btn{
+    padding: 0;
+    border:none;
+    margin: 0;
+    color: dodgerblue;
+    background-color: #fff;
+}
+.bg-1{
+    background-color: rgb(243, 228, 255);
+    color: rgb(88, 0, 170);
+    border-radius: 12px;
+    margin: 10px;
+}
+.bg-2{
+    background-color: rgb(255, 247, 228);
+    color: rgb(170, 116, 0);
+    border-radius: 12px;
+    margin: 10px;
+}
+.bg-3{
+    background-color: rgb(229, 255, 228);
+    color: rgb(0, 132, 13);
+    border-radius: 12px;
+    margin: 10px;
+}
+.bg-4{
+    background-color: rgb(227, 255, 255);
+    color: teal;
+    border-radius: 12px;
+    margin: 10px;
+}
+.data-card h1{
+    font-size: 20px;
+    margin: 0
+}
+.data-card p{
+    font-size: 17px;
+    margin: 0
+}
